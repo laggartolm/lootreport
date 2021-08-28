@@ -1,15 +1,15 @@
 # lootreport
-Capture data from Lords Mobile monster loots.
-This script is provided as-is.
-It is not user-friendly.
-It will click on your screen to delete gifts.
-Beware and use it at your own risk.
+Capture data from Lords Mobile monster loots.  
+This script is provided as-is.  
+It is not user-friendly.  
+It will click on your screen to delete gifts.  
+Beware and use it at your own risk.  
 
 ## Requirements
-pyautogui
-pyscreenshot
-Pillow (the PIL fork)
-pytesseract
+pyautogui  
+pyscreenshot  
+Pillow (the PIL fork)  
+pytesseract  
 
 ## Installation
 1) Install Google's Tesseract, e.g. for Windows:
