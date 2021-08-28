@@ -524,8 +524,6 @@ if __name__ == '__main__':
     resultsfile = 'current_results'
     
     
-    
-    
     # Tasks:
     # 'screen': capture and save images from screen
     # 'retypo': correct hunter and loot names from the current typo lists
