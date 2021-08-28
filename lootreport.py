@@ -19,7 +19,7 @@ import re
 
 pyautogui.PAUSE = 0.2
 
-# Download tesseract for Windoes from: https://github.com/UB-Mannheim/tesseract/wiki
+# Download tesseract for Windows from: https://github.com/UB-Mannheim/tesseract/wiki
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract'
 
 #pts.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract'
