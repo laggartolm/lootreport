@@ -10,14 +10,16 @@ pyautogui
 pyscreenshot  
 Pillow (the PIL fork)  
 pytesseract  
+...and Google's Tesseract OCR
 
 ## Installation
 1) Install Google's Tesseract, e.g. for Windows:
 https://github.com/UB-Mannheim/tesseract/wiki
-2) Download the script.
-3) With your Android emulator open, capture the screen while you are in the monster loots tab (see coords_explanations/example.png).
-4) Open the script with an IDE.
-5) Adjust the coordinates in the Coords class to your screen size and resolution. Use the images in coords_explanations/ as a guide.
+2) Install the other dependencies e.g. with `pip`
+3) Download the script and set Tesseract's location in the `pytesseract.pytesseract.tesseract_cmd` variable.
+4) With your Android emulator open, capture the screen while you are in the monster loots tab (see coords_explanations/example.png).
+5) Open the script with an IDE.
+6) Adjust the coordinates in the Coords class to your screen size and resolution. Use the images in coords_explanations/ as a guide.
 
 ## Usage
 
