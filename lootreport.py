@@ -19,6 +19,7 @@ import re
 
 pyautogui.PAUSE = 0.2
 
+# Download tesseract for Windoes from: https://github.com/UB-Mannheim/tesseract/wiki
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract'
 
 #pts.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract'
@@ -47,9 +48,9 @@ class Coords:
                                    [(10, 44)] + # left-side point between open bracket and loot image, to see if the position is wrong
                                    [(125, 88), (230, 88)] # loading circle animation
                                    )
-    monster_box = (5, 5, 600, 42) # Monster info data is here
-    hunter_box = (100, 50, 600, 90) # Hunter info data is here
-    loot_box = (10, 98, 600, 135) # Loot info data is here
+    monster_box = (5, 5, 580, 42) # Monster info data is here
+    hunter_box = (100, 50, 580, 90) # Hunter info data is here
+    loot_box = (100, 98, 580, 135) # Loot info data is here
     keys_box = (790, 98, 902, 135) # Keys info data is here
     open_delete_button_pos = (1600, 450) # Click here to open or delete a loot
     rest_pos = (100, 100) # Resting cursor position
@@ -274,7 +275,7 @@ def capture(top_left, bottom_right):
 
 def green(pixeldata, verbose=False):
     # Does the image have a green check mark pixel (=ok)?
-    green_limits = ((15, 70), (200, 250), (35, 250))
+    green_limits = ((15, 70), (200, 255), (35, 250))
     assert len(pixeldata) == 3
     (rlow, rhigh), (glow, ghigh), (blow, bhigh) = green_limits
     if verbose is True:
@@ -516,20 +517,12 @@ def load_and_test(imagefile, bypassblock=False):
 
 if __name__ == '__main__':
 
-    
-    raw_dir = 'saved_WRONG_SAVE_BAD'
-    load_dir = 'saved_EVERYTHING'
-    proc_dir = 'processed_EVERYTHING'
-    past_data_file = 'Data_EVERYTHING'
-    resultsfile = 'results_EVERYTHING'
-    
-    '''
     raw_dir = 'saved'
     load_dir = 'saved'
     proc_dir = 'processed'
     past_data_file = 'AllData'
     resultsfile = 'current_results'
-    '''
+    
     
     
     
@@ -540,8 +533,8 @@ if __name__ == '__main__':
     # 'loadnew': reanalyze all images in the raw_dir folder
     #            ==> THIS WILL OVERWRITE pickled data and saved table!
     
-    task = 'screen' # 'screen', 'retypo', 'load', 'loadnew'=> when starting a new week
-    label = '2021-01-03'
+    task = 'loadnew' # 'screen', 'retypo', 'load', 'loadnew'=> when starting a new week
+    label = '2021-08-28'
     stop =  False
     delete_rejected_images = False
     
