@@ -8,7 +8,7 @@ Created on Sat Aug  4 17:01:38 2018
 
 import pyautogui
 import pyscreenshot as ImageGrab
-import PIL
+import PIL # Actually the Pillow fork
 import time
 import os
 import pytesseract
