@@ -40,18 +40,18 @@ def sanitize_for_saving(text):
     
 
 class Coords:
-    data_box = ((530, 300), (1150, 400)) # coordinates of the first loot (to be cropped and captured)
-    green_check_pixel = (462, 11) # this pixel is only green due to the green checkmark of an open loot
+    data_box = ((765, 412), (1670, 550)) # coordinates of the first loot (to be cropped and captured)
+    green_check_pixel = (670, 12) # this pixel is only green due to the green checkmark of an open loot
     gift_check_pixel = (10, 10) # This pixel isn't deep blue when there's a loot
-    block_check_pixelrange = list([(405, y) for y in range(10, 96, 10)] + # right-side column to see if there's screen messages
-                                   [(8, 32)] + # left-side point between open bracket and loot image, to see if the position is wrong
-                                   [(69, 84), (69, 53)] # loading circle animation
+    block_check_pixelrange = list([(590, y) for y in range(10, 131, 10)] + # right-side column to see if there's screen messages
+                                   [(10, 44)] + # left-side point between open bracket and loot image, to see if the position is wrong
+                                   [(125, 88), (230, 88)] # loading circle animation
                                    )
-    monster_box = (5, 5, 400, 32) # Monster info data is here
-    hunter_box = (70, 38, 400, 62) # Hunter info data is here
-    loot_box = (70, 70, 400, 95) # Loot info data is here
-    keys_box = (545, 70, 615, 95) # Keys info data is here
-    open_delete_button_pos = (1100, 330) # Click here to open or delete a loot
+    monster_box = (5, 5, 600, 42) # Monster info data is here
+    hunter_box = (100, 50, 600, 90) # Hunter info data is here
+    loot_box = (10, 98, 600, 135) # Loot info data is here
+    keys_box = (790, 98, 902, 135) # Keys info data is here
+    open_delete_button_pos = (1600, 450) # Click here to open or delete a loot
     rest_pos = (100, 100) # Resting cursor position
 
 
