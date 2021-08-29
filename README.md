@@ -25,11 +25,12 @@ https://github.com/UB-Mannheim/tesseract/wiki
 
 ### Saving images for capture
 1) Set your monitor to its brightest (color brightness can affect image checks). 
-2) On Nox, open all loots.
+2) On Nox, open all loots. Do not delete them.
 3) Set the `task` variable to "screen".
 4) Run the script and quickly return to Nox to start capturing.
-5) When the capture is complete or stops, the cursor will move to the upper-left corner of the screen.
-6) IF YOU NEED TO STOP THE SCRIPT, move the cursor in one of the four corners of the screen. The script will stop automatically.
+5) The script will capture images of all opened loots, and will stop at the first unopened loot.
+6) When the capture is complete or stops, the cursor will move to the upper-left corner of the screen.
+7) IF YOU NEED TO STOP THE SCRIPT, move the cursor in one of the four corners of the screen. The script will stop automatically.
 
 ### Capturing data
 1) Set the `task` variable to "loadnew" (if starting from scratch) or "load" (if you want to append new captures to existing data).
